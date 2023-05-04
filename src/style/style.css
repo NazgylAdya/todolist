@@ -1,0 +1,142 @@
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.container {
+  padding: 66px 81px;
+  margin: 0 auto;
+}
+
+.title {
+  font-weight: 700;
+  text-align: left;
+  color: #000000;
+  margin-bottom: 28px;
+}
+
+.task_input {
+  width: 100%;
+  margin: 15px 0 21px;
+}
+
+.task_input input {
+  height: 75px;
+  width: 100%;
+  border: 1px solid #dbdbdb;
+  border-radius: 10px;
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: left;
+  color: #b6b6b6;
+  padding: 13px 0 43px 23px;
+}
+
+.push {
+  margin-bottom: 45px;
+}
+
+.push_btn:disabled {
+  background: #b6b6b6;
+}
+
+.push_btn {
+  background: #f44336;
+  border-radius: 6px;
+  padding: 13px 28px;
+  border: none;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.task,
+.done_task {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #dedede;
+  cursor: pointer;
+  height: 40px;
+  width: 100%;
+  padding: 5px 10px;
+}
+
+.done_task_name {
+  width: 92%;
+}
+
+.task .edit,
+.delete,
+.done_delete {
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 20px;
+  cursor: pointer;
+}
+
+.selected_task {
+  width: 1.3em;
+  height: 1.3em;
+  color: #ffffff;
+  border: 1px solid #6d6d6d;
+  appearance: none;
+  -webkit-appearance: none;
+  border-radius: 50%;
+  margin-right: 14px;
+  outline: none;
+  cursor: pointer;
+}
+.selected_task:hover {
+  background-image: url(../images/done.png);
+}
+
+.edit {
+  background-image: url(../images/edit.png);
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.delete,
+.done_delete {
+  background-image: url(../images/delete.png);
+}
+
+.edit_task {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.save {
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  color: #1c5ad2;
+  margin-left: 13px;
+  border: none;
+  background-color: white;
+}
+
+.text_task:focus {
+  outline: none;
+}
+
+.text_task {
+  width: 70%;
+  height: 39px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+}
